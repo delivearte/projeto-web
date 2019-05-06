@@ -1,0 +1,55 @@
+@{
+    ViewBag.Title = "Dia das Maes";
+    Layout = "~/Views/Shared/Base/_Layout.cshtml";
+}
+<style>
+    .content{
+    width: 60%;
+    margin: 0 20%;
+    padding: 5% 2%;
+}
+    .content b{
+           color: #333;
+    }
+.section_title{
+    font-size: 3em;
+    font-family: "Raleway";
+    font-weight: 900;
+    text-shadow: 1px 1px #eee;
+    text-transform: uppercase;
+    color: #FF0000;
+    text-align: center;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #007A8A;
+
+}
+(max-width: 360px) {
+     font-size: 1em;
+    text-align: center;
+}
+.tagline{
+       text-align: center;
+    padding: 30px 30px 0 30px;
+    font-size: 1.3em;
+    font-weight: 300; 
+}
+.img_logo_maes{
+    float: left;
+    width:80%;
+    margin: 0 10%;
+    padding-bottom: 30px;
+}
+</style>
+
+<div class="ui container fluid">
+    <div class="content">
+    <header>
+        <h1 class="section_title">Comemore com estilo o <b>Dia mais especial</b> da sua querida!</h1>
+        <p class="tagline">O presente especial como ela merece!</p>
+         <img class="ui middle aligned image img_logo_maes" src="~/assets/image/ads/galaxys8.png" />
+    </header>
+</div>
+
+<!-- ~/Views/Shared/Blocks/_TopSellers.cshtml -->
+@Html.Action("TopSellers", "Product")
